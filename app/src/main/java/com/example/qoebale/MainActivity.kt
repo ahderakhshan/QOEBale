@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val startqoebutton = findViewById<Button>(R.id.button4)
         val text = findViewById<TextView>(R.id.textView2)
-
+        text.text = "click startqoe button to get results"
         startqoebutton.setOnClickListener {
             text.text = "QOE started \n" +
                     "waiting for results"
