@@ -11,9 +11,6 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import android.os.Handler
 import android.os.Looper
-import com.example.chonto.MyDatabaseBuilder
-import com.example.chonto.QOEParams
-import com.example.chonto.saveUsersToDatabase
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.delay
 
