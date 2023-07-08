@@ -2,11 +2,11 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlinx-serialization'
+   // apply plugin: 'kotlin-kapt'
 }
 
 android {
     compileSdk 33
-
     defaultConfig {
         applicationId "com.example.qoebale"
         minSdk 21
@@ -45,6 +45,13 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:0.9.0"
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
+    //
+    implementation "android.arch.lifecycle:extensions:1.1.0"
+    implementation "androidx.room:room-runtime:2.4.0"
+
+    //kapt "android.arch.lifecycle:compiler:1.1.0"
+    implementation "android.arch.persistence.room:runtime:1.0.0"
+   // kapt "android.arch.persistence.room:compiler:1.0.0"
    // implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.9.0"
     //
     testImplementation 'junit:junit:4.+'
